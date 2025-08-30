@@ -539,7 +539,7 @@ class PNS:
         commited = await self.process_perform_commit_domain(account, address, domain, secret, use_proxy)
         if not commited: return
 
-        await self.print_timer(60, 65, "Registering Domain")
+        await self.print_timer(60, 65, "Registering Domain join our Discord: https://discord.gg/j8jZ5sBp7Y for Givveaway")
 
         self.log(
             f"{Fore.MAGENTA+Style.BRIGHT} ● {Style.RESET_ALL}"
