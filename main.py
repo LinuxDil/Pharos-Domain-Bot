@@ -107,17 +107,6 @@ class PNS:
             print(Fore.GREEN + Style.BRIGHT + line.center(term_width) + Style.RESET_ALL
         )
 
-    def format_seconds(self, seconds):
-        hours, remainder = divmod(seconds, 3600)
-        minutes, seconds = divmod(remainder, 60)
-        return f"{int(hours):02}:{int(minutes):02}:{int(seconds):02}"    def welcome(self):
-        figlet = Figlet(font='ansi_shadow')
-        banner_lines = figlet.renderText('BG WIN').splitlines()
-        term_width = shutil.get_terminal_size().columns
-
-        for line in banner_lines:
-            print(Fore.GREEN + Style.BRIGHT + line.center(term_width) + Style.RESET_ALL
-        )
 
     def format_seconds(self, seconds):
         hours, remainder = divmod(seconds, 3600)
